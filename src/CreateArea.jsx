@@ -20,7 +20,7 @@ function CreateArea() {
        headers: {
          "Content-Type": "application/json",
        },
-       body: article,
+       body: JSON.stringify(article)
      })
        .then((response) => {
          console.log(response);
